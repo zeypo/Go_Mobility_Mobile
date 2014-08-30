@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Go Mobility</title>
+        <link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.2.min.css">
+        <link rel="stylesheet" href="assets/css/common.css">
+        <script src="bower_components/jquery/jquery.min.js"></script>
+        <script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.2.min.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/events.js"></script>
+        <script src="assets/js/dom.js"></script>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header data-role="header" id="header-top">
+            <h3>GoMobility</h3>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="text">Menu</a>
+
+            <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
+                <ul data-role="listview"> 
+                    <li><a href="#parcour-create">Crée une experience</a></li>
+                    <li><a href="#parcour-select-type">Voir les experiences</a></li>
+                    <li><a href="#">Profile</a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- connection -->
+        <div data-role="page" id="connection">
+            <header data-role="header">
+                <h3>GoMobility</h3>
+            </header>
+            
+            <main class="ui-content">
+                <a href="#home" id="connection-btn">connections</a>
+            </main>
+        </div>
+
+        <!-- First Page -->
+        <div data-role="page" id="home">
+            <main class="ui-content">
+                <p><a href="#parcour-create">Crée un parcour</a></p>
+                <p><a href="#parcour-select-type">Sélectionner un parcour</a></p>
+            </main>
+        </div>
+
+        <!-- Crée un parcour -->
+        <div data-role="page" id="parcour-create">
+            <main class="ui-content">
+                <form>
+                    <p>Type de transport</p>
+                    <select name="select-native-1" id="select-native-1">
+                        <option value="1">Touristique</option>
+                        <option value="2">Sportif</option>
+                        <option value="3">Work</option>
+                    </select>
+
+                    <p>Parcour</p>
+                    <input type="text" name="text-basic" id="text-basic" value="Départ">
+                    <input type="text" name="text-basic" id="text-basic" value="Arrivé">
+                    <p>Ceci n'est pas une google map</p>
+                    <br><br>
+
+                    <p>Description</p>
+                    <textarea cols="3" rows="8" name="textarea" id="textarea"></textarea>
+
+                    <input type="button" value="Soumettre" data-theme="a">
+                </form>
+            </main>
+        </div>
+
+        <!-- Séléctionner le type de parcour -->
+        <div data-role="page" id="parcour-select-type">
+            <main class="ui-content">
+                <p><a href="#parcour-liste">Sportif</a></p>
+                <p><a href="#parcour-liste">Balade</a></p>
+                <p><a href="#parcour-liste">Travail</a></p>
+            </main>
+        </div>
+
+        <!-- Liste des parcours -->
+        <div data-role="page" id="parcour-liste">
+            <main class="ui-content">
+                <p>Liste des parcours</p>
+                <ul>
+                    <li><a href="#parcour-fiche">Un parcour</a></li>
+                    <li><a href="#parcour-fiche">Un parcour</a></li>
+                    <li><a href="#parcour-fiche">Un parcour</a></li>
+                    <li><a href="#parcour-fiche">Un parcour</a></li>
+                </ul>
+            </main>
+        </div>
+
+        <!-- Un parcour -->
+        <div data-role="page" id="parcour-fiche">
+            <main class="ui-content">
+                <p>Un parcour avec description et gmap</p>
+                <a href="#parcour-fins" class="ui-shadow ui-btn ui-corner-all">Fin de parcour</a>
+            </main>
+        </div>
+    
+        <!-- Fin du parcour -->
+        <div data-role="page" id="parcour-fins">
+            <main class="ui-content">
+                <p>Nombre de eco dépensés ect...</p>
+            </main>
+        </div>
+    
+    </body>
+
+    <script>
+        $(function(){
+
+            app.init();
+
+        })
+    </script>
+</html>
