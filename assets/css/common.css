@@ -1,25 +1,50 @@
 /*
 _____COLOR_____
 	-----Blue------	
-		dominante 	: #7bd2ee
+		dominante 	: #7bd2ee;
 		light 		: #ecf7f8;
+	-----Gris------
+		Gris		: #5d5d5e;
 */
 
 *{font-family: 'Raleway', sans-serif;}
 
 .wrapper{background-color: #ecf7f8; }
+body{}
 
-#connection{ background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; }
+/*------GENERIQUE------*/
+
+#header-top{background: #ecf7f8 url(../img/bg_border_cloud.png) repeat-x bottom center; padding-bottom: 20px; border: none;}
+	.content-header{ text-align: center; background: #fff;}
+		.content-header h4{ margin:0; padding: 1.3em 0; }
+
+/*------CONNECTION------*/
+
+#connection{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;  overflow: hidden;}
+	
 	#connection header{ border: none; background: #7bd2ee; }
 		#connection header h3{ margin:0; padding: 1.3em 0; }
-	#connection main{ padding: 0; }	
+	
+	#connection main{ padding: 0;}	
+		
 		#connection main .header{text-align: center; background: url(../img/bg_border_cloud.png) repeat-x bottom center; padding-bottom: 20px;}
 			#connection main .header a{display: block;}
-				#connection main .header a ul{padding-left: 0; margin:0; background: #fff;padding: 2em 0;}
+				#connection main .header a ul{padding-left: 0; margin:0; background: #fff;padding: 4em 0 2em 0;}
 					#connection main .header a ul li{list-style-type: none;}
-						#connection main .header a ul li img{width: 70%; margin-bottom: 5px;}
+						#connection main .header a ul li img{width: 80%; margin-bottom: 1em;}
+		
 		#connection main .main{text-align: center;}
-			#connection main .main p{font-size: 1em; line-height: 2em;}
+			#connection main .main p{font-size: 1em; line-height: 2em;color: #5d5d5e;}
 				#connection main .main p span{font-size: 1.5em; font-weight: bold;}
+		
+	#connection .mascotte{ position: absolute; bottom: -50px; right: -70px; }
 
 
+/*----------HOME------------*/
+
+#home{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; overflow: hidden;}
+	#home main{position: absolute;height: 88%;width: 100%;padding: 0;}
+		#home main {overflow: hidden;}
+			#home main div{position: relative; height: 50%; width: 100%; float: left; text-align: center;}
+				#home main div img{width: 35%; margin-top: 2em;}
+					#home main div a{ font-weight: bold; color: #5d5d5e; text-transform: uppercase; font-size: 0.8em; text-decoration: none;}

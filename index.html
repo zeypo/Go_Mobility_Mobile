@@ -18,7 +18,9 @@
 
         <!-- Header -->
         <header data-role="header" id="header-top">
-            <h3>GoMobility</h3>
+            <div class="content-header">
+                <h4>GoMobility</h4>
+            </div>
             <a href="#nav-panel" data-icon="bars" data-iconpos="text">Menu</a>
 
             <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
@@ -33,7 +35,7 @@
         <!-- connection -->
         <div data-role="page" id="connection" class="wrapper">
             <header data-role="header">
-                <h3><img src="assets/img/logo-go-mobility.svg" alt="logo_gomobility"></h3>
+                <h3><img src="assets/img/logo-go-mobility.svg" alt="Logo Gomobility"></h3>
             </header>
             
             <main class="ui-content">
@@ -49,13 +51,22 @@
                     <p>La premiere application <br/> <span>«Eco - Ardechoise»</span></p>
                 </div>  
             </main>
+            <footer class="mascotte">
+                <img src="assets/img/mascotte.svg" alt="Mascotte Gomobility">
+            </footers>
         </div>
 
         <!-- First Page -->
-        <div data-role="page" id="home">
+        <div data-role="page" id="home" class="wrapper">
             <main class="ui-content">
-                <p><a href="#parcour-create">Crée un parcour</a></p>
-                <p><a href="#parcour-select-type">Sélectionner un parcour</a></p>
+                <div>     
+                    <img src="assets/img/creat_exp.svg" alt="Creer une experience" />                   
+                    <p><a href="#parcour-create">Je propose un parcour</a></p>
+                </div>
+                <div>
+                    <img src="assets/img/choice_exp.svg" alt="Choisir une experience" />                                       
+                    <p><a href="#parcour-select-type">Je choisie une expérience</a></p>
+                </div>
             </main>
         </div>
 
