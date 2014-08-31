@@ -85,6 +85,9 @@ body{}
 			#felicitation p span{font-size: 0.7em; text-transform: none;font-weight: lighter;}
 
 
+#parcour-liste{}
+	#parcour-liste ul li{list-style-type: none;}
+
 
 
 
