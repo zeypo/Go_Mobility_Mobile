@@ -1,0 +1,25 @@
+/*
+_____COLOR_____
+	-----Blue------	
+		dominante 	: #7bd2ee
+		light 		: #ecf7f8;
+*/
+
+*{font-family: 'Raleway', sans-serif;}
+
+.wrapper{background-color: #ecf7f8; }
+
+#connection{ background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; }
+	#connection header{ border: none; background: #7bd2ee; }
+		#connection header h3{ margin:0; padding: 1.3em 0; }
+	#connection main{ padding: 0; }	
+		#connection main .header{text-align: center; background: url(../img/bg_border_cloud.png) repeat-x bottom center; padding-bottom: 20px;}
+			#connection main .header a{display: block;}
+				#connection main .header a ul{padding-left: 0; margin:0; background: #fff;padding: 2em 0;}
+					#connection main .header a ul li{list-style-type: none;}
+						#connection main .header a ul li img{width: 70%; margin-bottom: 5px;}
+		#connection main .main{text-align: center;}
+			#connection main .main p{font-size: 1em; line-height: 2em;}
+				#connection main .main p span{font-size: 1.5em; font-weight: bold;}
+
+

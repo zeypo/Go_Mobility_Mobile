@@ -7,13 +7,14 @@
         <title>Go Mobility</title>
         <link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.2.min.css">
         <link rel="stylesheet" href="assets/css/common.css">
+        <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
         <script src="bower_components/jquery/jquery.min.js"></script>
         <script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.2.min.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/events.js"></script>
         <script src="assets/js/dom.js"></script>
     </head>
-    <body>
+    <body class="gmbody">
 
         <!-- Header -->
         <header data-role="header" id="header-top">
@@ -30,13 +31,23 @@
         </header>
 
         <!-- connection -->
-        <div data-role="page" id="connection">
+        <div data-role="page" id="connection" class="wrapper">
             <header data-role="header">
-                <h3>GoMobility</h3>
+                <h3><img src="assets/img/logo-go-mobility.svg" alt="logo_gomobility"></h3>
             </header>
             
             <main class="ui-content">
-                <a href="#home" id="connection-btn">connections</a>
+                <div class="header">
+                    <a href="#home" id="connection-btn">
+                        <ul>
+                            <li><img src="assets/img/connection-email.png"></li>
+                            <li><img src="assets/img/connection-facebook.png"></li>
+                        </ul>
+                    </a>    
+                </div>  
+                <div class="main">
+                    <p>La premiere application <br/> <span>«Eco - Ardechoise»</span></p>
+                </div>  
             </main>
         </div>
 
