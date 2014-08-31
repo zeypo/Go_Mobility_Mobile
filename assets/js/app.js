@@ -5,6 +5,8 @@
         init: function()
         {
             this.dom.init();
+            this.gmap.init();
+            this.gmap.trace('L\'Ardèche', 'Le Pequelet', 'touristique');
             this.events.init();
         }
 
