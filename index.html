@@ -21,15 +21,18 @@
             <div class="content-header">
                 <h4>GoMobility</h4>
             </div>
-            <a href="#nav-panel" data-icon="bars" data-iconpos="text">Menu</a>
+            <a href="#nav-panel" data-icon="bars" data-iconpos="text" class="nav_icone"><img src="assets/img/nav.svg" /></a>
 
             <div data-role="panel" data-position-fixed="true" data-display="overlay" data-theme="a" id="nav-panel">
-                <ul data-role="listview"> 
+                <ul data-role="listview" class="nav"> 
+                    <li class="logo"><a href="#home"><img src="assets/img/logo-go-mobility.svg" alt="Logo Gomobility"></a></li>
                     <li><a href="#parcour-create">Crée une experience</a></li>
                     <li><a href="#parcour-select-type">Voir les experiences</a></li>
                     <li><a href="#">Profile</a></li>
+                    <li class="logout"><a href="#">Se deconnecter</a></li>
                 </ul>
             </div>
+            <div class="bg_cloud"></div>
         </header>
 
         <!-- connection -->
@@ -51,21 +54,22 @@
                     <p>La premiere application <br/> <span>«Eco - Ardechoise»</span></p>
                 </div>  
             </main>
-            <footer class="mascotte">
-                <img src="assets/img/mascotte.svg" alt="Mascotte Gomobility">
-            </footers>
         </div>
 
         <!-- First Page -->
         <div data-role="page" id="home" class="wrapper">
             <main class="ui-content">
-                <div>     
-                    <img src="assets/img/creat_exp.svg" alt="Creer une experience" />                   
-                    <p><a href="#parcour-create">Je propose un parcour</a></p>
+                <div>  
+                    <a href="#parcour-create">   
+                        <img src="assets/img/creat_exp.svg" alt="Creer une experience" />                   
+                        <p>Je propose un parcour</p>
+                    </a>
                 </div>
                 <div>
-                    <img src="assets/img/choice_exp.svg" alt="Choisir une experience" />                                       
-                    <p><a href="#parcour-select-type">Je choisie une expérience</a></p>
+                    <a href="#parcour-select-type">
+                        <img src="assets/img/choice_exp.svg" alt="Choisir une experience" />                                       
+                        <p>Je choisie une expérience</p>
+                    </a>
                 </div>
             </main>
         </div>
@@ -84,23 +88,27 @@
                     <p>Parcour</p>
                     <input type="text" name="text-basic" id="text-basic" value="Départ">
                     <input type="text" name="text-basic" id="text-basic" value="Arrivé">
-                    <p>Ceci n'est pas une google map</p>
-                    <br><br>
-
                     <p>Description</p>
                     <textarea cols="3" rows="8" name="textarea" id="textarea"></textarea>
-
-                    <input type="button" value="Soumettre" data-theme="a">
+                    <div class="bt_submit">
+                        <a href="#felicitation">Soumettre</a>
+                    </div>
                 </form>
             </main>
         </div>
 
         <!-- Séléctionner le type de parcour -->
-        <div data-role="page" id="parcour-select-type">
+        <div data-role="page" id="parcour-select-type" class="wrapper">
             <main class="ui-content">
-                <p><a href="#parcour-liste">Sportif</a></p>
-                <p><a href="#parcour-liste">Balade</a></p>
-                <p><a href="#parcour-liste">Travail</a></p>
+                <div class="sportif">
+                    <a href="#parcour-liste">Sportif</a>
+                </div>
+                <div class="tourisme">
+                    <a href="#parcour-liste">Touristique</a>
+                </div>
+                <div class="work">
+                    <a href="#parcour-liste">Gotowork</a>
+                </div>
             </main>
         </div>
 
@@ -122,6 +130,14 @@
             <main class="ui-content">
                 <p>Un parcour avec description et gmap</p>
                 <a href="#parcour-fins" class="ui-shadow ui-btn ui-corner-all">Fin de parcour</a>
+            </main>
+        </div>
+
+        <!-- Felicitation -->
+        <div data-role="page" id="felicitation">
+            <main class="ui-content">
+                <p>Felicitation<br/> <span>Votre parcours a bien été créer</span></p>
+                <a href="#parcour-fiche">Acceder a votre parcours</a>
             </main>
         </div>
     

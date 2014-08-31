@@ -4,7 +4,8 @@ _____COLOR_____
 		dominante 	: #7bd2ee;
 		light 		: #ecf7f8;
 	-----Gris------
-		Gris		: #5d5d5e;
+		dark		: #5d5d5e;
+		light 		: #eeeeee;
 */
 
 *{font-family: 'Raleway', sans-serif;}
@@ -14,9 +15,22 @@ body{}
 
 /*------GENERIQUE------*/
 
-#header-top{background: #ecf7f8 url(../img/bg_border_cloud.png) repeat-x bottom center; padding-bottom: 20px; border: none;}
-	.content-header{ text-align: center; background: #fff;}
-		.content-header h4{ margin:0; padding: 1.3em 0; }
+#header-top{background: #ecf7f8}
+	#header-top .content-header{ text-align: center; background: #fff;}
+		#header-top .content-header h4{ margin:0; padding: 1.3em 0; }
+	#header-top .nav_icone{background: none; border: none; box-shadow: none;}
+		#header-top .nav_icone img{width: 2em; margin-top: 1em;}
+	#header-top .nav{ position: absolute; height:100%; width: 100%; }
+		#header-top .nav li a{border: none;text-shadow:none; box-shadow: none; padding: 30px 15px; background: none; border-bottom: 1px solid #eeeeee;}
+		#header-top .nav li a:after{background: none;}
+		#header-top .nav li.logo{background: #7bd2ee;}
+		#header-top .nav li.logo a{text-align: center; padding:1em 0;}
+			#header-top .nav li a img{max-width: inherit;width: 80%; margin: 0 auto; position: inherit; float: none;}
+		#header-top .nav .logout{ position: absolute; bottom: 0; width: 100%;}
+			#header-top .nav .logout a{ background:#eeeeee;color: #cecece;padding: 2em 1em; font-weight: lighter; text-align: center;}
+	.bg_cloud{position: absolute;bottom: -20px; background: url(../img/bg_border_cloud.png) repeat-x center top; height: 20px; width: 100%;z-index: 100;}
+
+
 
 /*------CONNECTION------*/
 
@@ -34,17 +48,49 @@ body{}
 						#connection main .header a ul li img{width: 80%; margin-bottom: 1em;}
 		
 		#connection main .main{text-align: center;}
-			#connection main .main p{font-size: 1em; line-height: 2em;color: #5d5d5e;}
+			#connection main .main p{font-size: 1em; line-height: 2em;color: #5d5d5e; margin: 4em 0;}
 				#connection main .main p span{font-size: 1.5em; font-weight: bold;}
-		
-	#connection .mascotte{ position: absolute; bottom: -50px; right: -70px; }
 
 
 /*----------HOME------------*/
 
 #home{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; overflow: hidden;}
-	#home main{position: absolute;height: 88%;width: 100%;padding: 0;}
+	#home main{position: absolute;height: calc(100% - 77px);width: 100%;padding: 0;}
 		#home main {overflow: hidden;}
 			#home main div{position: relative; height: 50%; width: 100%; float: left; text-align: center;}
 				#home main div img{width: 35%; margin-top: 2em;}
 					#home main div a{ font-weight: bold; color: #5d5d5e; text-transform: uppercase; font-size: 0.8em; text-decoration: none;}
+
+
+
+/*---------------*/
+#parcour-select-type.wrapper{overflow: hidden;background:#7bd2ee} 
+	#parcour-select-type main{position: absolute;height: 100%;width: 100%;padding: 0;}
+		#parcour-select-type main div{height: 34%; float: left;width: 100%; text-align: center; display:table;}
+			#parcour-select-type main div a{text-decoration: none; text-shadow:none; color:#fff; vertical-align: middle; display: table-cell; }
+		#parcour-select-type main div.sportif{background: #7bd2ee;}
+		#parcour-select-type main div.tourisme{background: #95d1b8;}
+		#parcour-select-type main div.work{background: #ed7c7b;}
+
+#parcour-create{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;}
+	#parcour-create div,#parcour-create textarea{background: #fff; border:none; box-shadow: none; border-radius: 0; resize:none;}
+	#parcour-create textarea{margin-bottom: 40px; height: }
+	#parcour-create .bt_submit{padding: 10px; text-align: center;}
+		#parcour-create .bt_submit a{color: #7bd2ee; text-decoration: none;}
+
+#felicitation{background: #ecf7f8 url(../img/bg_border_montain_mascotte.png) no-repeat bottom center; text-align: center;}
+	#felicitation main{position: absolute;height: 100%;width: 100%;padding: 0;}
+		#felicitation a{color: #7bd2ee; text-decoration: none; border: 1px solid #7bd2ee; border-radius: 3px; padding: 1em;}
+		#felicitation p{font-size: 2em; text-transform: uppercase; margin-top: 3em; font-weight: bold;}
+			#felicitation p span{font-size: 0.7em; text-transform: none;font-weight: lighter;}
+
+
+
+
+
+
+
+
+
+
+
