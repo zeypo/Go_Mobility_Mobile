@@ -21,7 +21,7 @@
         <!-- Header -->
         <header data-role="header" id="header-top">
             <div class="content-header">
-                <h4>GoMobility</h4>
+                <h4 class="page-title">GoMobility</h4>
             </div>
             <a href="#nav-panel" data-icon="bars" data-iconpos="text" class="nav_icone"><img src="assets/img/nav.svg" /></a>
 
@@ -59,7 +59,7 @@
         </div>
 
         <!-- First Page -->
-        <div data-role="page" id="home" class="wrapper">
+        <div data-role="page" id="home" class="wrapper" data-title="Home">
             <main class="ui-content">
                 <div>  
                     <a href="#parcour-create">   
@@ -77,7 +77,7 @@
         </div>
 
         <!-- Crée un parcour -->
-        <div data-role="page" id="parcour-create">
+        <div data-role="page" id="parcour-create" data-title="Crée un parcour">
             <main class="ui-content">
                 <form>
                     <p>Type de transport</p>
@@ -100,7 +100,7 @@
         </div>
 
         <!-- Séléctionner le type de parcour -->
-        <div data-role="page" id="parcour-select-type" class="wrapper">
+        <div data-role="page" id="parcour-select-type" class="wrapper" data-title="Selectionner parcour">
             <main class="ui-content">
                 <div class="sportif">
                     <a href="#parcour-liste">Sportif</a>
@@ -115,7 +115,7 @@
         </div>
 
         <!-- Liste des parcours -->
-        <div data-role="page" id="parcour-liste">
+        <div data-role="page" id="parcour-liste" data-title="Liste des parcours">
             <main class="ui-content">
                 <p>Liste des parcours</p>
                 <ul>
@@ -128,7 +128,7 @@
         </div>
 
         <!-- Un parcour -->
-        <div data-role="page" id="parcour-fiche">
+        <div data-role="page" id="parcour-fiche" data-title="Parcour">
             <main class="ui-content">
                 <p>Un parcour avec description et gmap</p>
                 <div id="map" style="height:300px;"></div>
@@ -137,7 +137,7 @@
         </div>
 
         <!-- Felicitation -->
-        <div data-role="page" id="felicitation">
+        <div data-role="page" id="felicitation" data-title="Création de parcour">
             <main class="ui-content">
                 <p>Felicitation<br/> <span>Votre parcours a bien été créer</span></p>
                 <a href="#parcour-fiche">Acceder a votre parcours</a>
@@ -145,7 +145,7 @@
         </div>
     
         <!-- Fin du parcour -->
-        <div data-role="page" id="parcour-fins">
+        <div data-role="page" id="parcour-fins" data-title="Fin de parcour">
             <main class="ui-content">
                 <p>Nombre de eco dépensés ect...</p>
             </main>
