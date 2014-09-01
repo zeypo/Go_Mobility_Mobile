@@ -8,14 +8,14 @@ _____COLOR_____
 		light 		: #eeeeee;
 */
 
-*{font-family: 'Raleway', sans-serif;}
+*{}
 
 .wrapper{background-color: #ecf7f8; }
 body{}
 
 /*------GENERIQUE------*/
 
-#header-top{background: #ecf7f8}
+#header-top{background: #ecf7f8;font-family: 'Raleway', sans-serif;}
 	#header-top .content-header{ text-align: center; background: #fff;}
 		#header-top .content-header h4{ margin:0; padding: 1.3em 0; }
 	#header-top .nav_icone{background: none; border: none; box-shadow: none;}
@@ -34,7 +34,7 @@ body{}
 
 /*------CONNECTION------*/
 
-#connection{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;  overflow: hidden;}
+#connection{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;  overflow: hidden;font-family: 'Raleway', sans-serif;}
 	
 	#connection header{ border: none; background: #7bd2ee; }
 		#connection header h3{ margin:0; padding: 1.3em 0; }
@@ -54,7 +54,7 @@ body{}
 
 /*----------HOME------------*/
 
-#home{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; overflow: hidden;}
+#home{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; overflow: hidden;font-family: 'Raleway', sans-serif;}
 	#home main{position: absolute;height: calc(100% - 77px);width: 100%;padding: 0;}
 		#home main {overflow: hidden;}
 			#home main div{position: relative; height: 50%; width: 100%; float: left; text-align: center;}
@@ -64,7 +64,7 @@ body{}
 
 
 /*---------------*/
-#parcour-select-type.wrapper{overflow: hidden;background:#7bd2ee} 
+#parcour-select-type.wrapper{overflow: hidden;background:#7bd2ee;font-family: 'Raleway', sans-serif;} 
 	#parcour-select-type main{position: absolute;height: 100%;width: 100%;padding: 0;}
 		#parcour-select-type main div{height: 34%; float: left;width: 100%; text-align: center; display:table;}
 			#parcour-select-type main div a{text-decoration: none; text-shadow:none; color:#fff; vertical-align: middle; display: table-cell; }
@@ -72,24 +72,31 @@ body{}
 		#parcour-select-type main div.tourisme{background: #95d1b8;}
 		#parcour-select-type main div.work{background: #ed7c7b;}
 
-#parcour-create{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;}
+#parcour-create{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;font-family: 'Raleway', sans-serif;}
 	#parcour-create div,#parcour-create textarea{background: #fff; border:none; box-shadow: none; border-radius: 0; resize:none;}
 	#parcour-create textarea{margin-bottom: 40px; height: }
 	#parcour-create .bt_submit{padding: 10px; text-align: center;}
-		#parcour-create .bt_submit a{color: #7bd2ee; text-decoration: none;}
+		#parcour-create .bt_submit a{color: #7bd2ee; text-decoration: none;font-family: 'Raleway', sans-serif;}
 
-#felicitation{background: #ecf7f8 url(../img/bg_border_montain_mascotte.png) no-repeat bottom center; text-align: center;}
+#felicitation{background: #ecf7f8 url(../img/bg_border_montain_mascotte.png) no-repeat bottom center; text-align: center;font-family: 'Raleway', sans-serif;}
 	#felicitation main{position: absolute;height: 100%;width: 100%;padding: 0;}
 		#felicitation a{color: #7bd2ee; text-decoration: none; border: 1px solid #7bd2ee; border-radius: 3px; padding: 1em;}
 		#felicitation p{font-size: 2em; text-transform: uppercase; margin-top: 3em; font-weight: bold;}
 			#felicitation p span{font-size: 0.7em; text-transform: none;font-weight: lighter;}
 
 
-#parcour-liste{}
-	#parcour-liste ul li{list-style-type: none;}
+#parcour-liste{background: #ecf7f8;font-family: 'Raleway', sans-serif;}
+	#parcour-liste ul{margin: 0;padding: 0;}
+	#parcour-liste ul li{list-style-type: none; border-bottom: 1px solid #fff; overflow: hidden;}
+	#parcour-liste ul li a{text-decoration: none; color:#5d5d5e; overflow: hidden; font-weight: inherit;}
+	#parcour-liste ul li .parcour_list{float: left; background: url(../img/list.png) no-repeat left 9px;}
+			#parcour-liste ul li .parcour_list p{margin-left: 37px; margin-bottom: 28px;}
+		#parcour-liste ul li .score{font-size: 15px;font-family: 'Open Sans', sans-serif !important; float:right;text-transform: uppercase;right: 0;font-weight: bold; color: #95d1b8;}
+			#parcour-liste ul li .score p{margin-top: 26px;}
+				#parcour-liste ul li .score span{font-size: 30px;}
 
-
-
+#profil{}
+	#profil img{width: 100%;}
 
 
 

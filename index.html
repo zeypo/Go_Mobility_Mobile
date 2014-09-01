@@ -8,11 +8,13 @@
         <link rel="stylesheet" href="bower_components/jquery-mobile-bower/css/jquery.mobile-1.4.2.min.css">
         <link rel="stylesheet" href="assets/css/common.css">
         <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600,700|Open+Sans:400italic,400,700' rel='stylesheet' type='text/css'>
+        <script src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=places&dummy=.js"></script>
         <script src="bower_components/jquery/jquery.min.js"></script>
         <script src="bower_components/jquery-mobile-bower/js/jquery.mobile-1.4.2.min.js"></script>
         <script src="assets/js/app.js"></script>
         <script src="assets/js/events.js"></script>
         <script src="assets/js/dom.js"></script>
+        <script src="assets/js/gmap.js"></script>
     </head>
     <body class="gmbody">
 
@@ -28,7 +30,7 @@
                     <li class="logo"><a href="#home"><img src="assets/img/logo-go-mobility.svg" alt="Logo Gomobility"></a></li>
                     <li><a href="#parcour-create">Crée une experience</a></li>
                     <li><a href="#parcour-select-type">Voir les experiences</a></li>
-                    <li><a href="#">Profile</a></li>
+                    <li><a href="#profil">Profile</a></li>
                     <li class="logout"><a href="#connection">Se deconnecter</a></li>
                 </ul>
             </div>
@@ -116,31 +118,49 @@
             <main class="ui-content">
                 <ul>
                     <li><a href="#parcour-fiche">
-                        <div>
+                        <div class="parcour_list">
                             <p>Annoya</p>
-                            <p>Saint Sigolene</p>
+                            <p>St Sigolene</p>
                         </div>
                         <div class="score">
-
+                            <p><span>3 403</span> points</p>
                         </div>
                     </a></li>
                     <li><a href="#parcour-fiche">
-
-                    </a></li>
-                    <li><a href="#parcour-fiche">  
-
-                    </a></li>
-                    <li><a href="#parcour-fiche">
-
-                    </a></li>
-                    <li><a href="#parcour-fiche">
-
-                    </a></li>
-                    <li><a href="#parcour-fiche">  
-
+                        <div class="parcour_list">
+                            <p>Le Chayarde</p>
+                            <p>Privas</p>
+                        </div>
+                        <div class="score">
+                            <p><span>2 033</span> points</p>
+                        </div>
                     </a></li>
                     <li><a href="#parcour-fiche">
-
+                        <div class="parcour_list">
+                            <p>Aubenas</p>
+                            <p>Vesseaux</p>
+                        </div>
+                        <div class="score">
+                            <p><span>2 021</span> points</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#parcour-fiche">
+                        <div class="parcour_list">
+                            <p>St Martin de Valamas</p>
+                            <p>Jaujac</p>
+                        </div>
+                        <div class="score">
+                            <p><span>1 230</span> points</p>
+                        </div>
+                    </a></li>
+                    <li><a href="#parcour-fiche">
+                        <div class="parcour_list">
+                            <p>St Felicien</p>
+                            <p>St Victor</p>
+                        </div>
+                        <div class="score">
+                            <p><span>932</span> points</p>
+                        </div>
                     </a></li>
                 </ul>
             </main>
@@ -150,15 +170,25 @@
         <div data-role="page" id="parcour-fiche">
             <main class="ui-content">
                 <p>Un parcour avec description et gmap</p>
+                <div id="map" style="height:300px;"></div>
                 <a href="#parcour-fins" class="ui-shadow ui-btn ui-corner-all">Fin de parcour</a>
             </main>
         </div>
+
+        <!-- Un profil -->
+        <div data-role="page" id="profil">
+            <main class="ui-content">
+                <img src="assets/img/user_pic.png">
+                <a href="#parcour-fins" class="ui-shadow ui-btn ui-corner-all">Fin de parcour</a>
+            </main>
+        </div>
+
 
         <!-- Felicitation -->
         <div data-role="page" id="felicitation">
             <main class="ui-content">
                 <p>Felicitation<br/> <span>Votre parcours a bien été créer</span></p>
-                <a href="#parcour-fiche">Acceder a votre parcours</a>
+                <a href=""></a>
             </main>
         </div>
     
