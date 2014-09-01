@@ -21,10 +21,14 @@ body{}
 	#header-top .nav_icone{background: none; border: none; box-shadow: none;}
 		#header-top .nav_icone img{width: 2em; margin-top: 1em;}
 	#header-top .nav{ position: absolute; height:100%; width: 100%; }
-		#header-top .nav li a{border: none;text-shadow:none; box-shadow: none; padding: 30px 15px; background: none; border-bottom: 1px solid #eeeeee;}
+		#header-top .nav li a{border: none;text-shadow:none; box-shadow: none; padding: 30px 15px; background: none; border-bottom: 1px solid #eeeeee; ba}
 		#header-top .nav li a:after{background: none;}
 		#header-top .nav li.logo{background: #7bd2ee;}
 		#header-top .nav li.logo a{text-align: center; padding:1em 0;}
+		#header-top .nav .icon{padding-left: 46px;}
+		#header-top .nav .creat_icon{background: url(../img/icone_nav_creat.png) 10px center no-repeat}
+		#header-top .nav .see_icon{background: url(../img/icone_nav_see.png) 10px center no-repeat}
+		#header-top .nav .user_icon{background: url(../img/icone_nav_user.png) 10px center no-repeat}
 			#header-top .nav li a img{max-width: inherit;width: 80%; margin: 0 auto; position: inherit; float: none;}
 		#header-top .nav .logout{ position: absolute; bottom: 0; width: 100%;}
 			#header-top .nav .logout a{ background:#eeeeee;color: #cecece;padding: 2em 1em; font-weight: lighter; text-align: center;}
@@ -62,8 +66,6 @@ body{}
 					#home main div a{ font-weight: bold; color: #5d5d5e; text-transform: uppercase; font-size: 0.8em; text-decoration: none;}
 
 
-
-/*---------------*/
 #parcour-select-type.wrapper{overflow: hidden;background:#7bd2ee;font-family: 'Raleway', sans-serif;} 
 	#parcour-select-type main{position: absolute;height: 100%;width: 100%;padding: 0;}
 		#parcour-select-type main div{height: 34%; float: left;width: 100%; text-align: center; display:table;}
@@ -85,20 +87,39 @@ body{}
 			#felicitation p span{font-size: 0.7em; text-transform: none;font-weight: lighter;}
 
 
-#parcour-liste{background: #ecf7f8;font-family: 'Raleway', sans-serif;}
-	#parcour-liste ul{margin: 0;padding: 0;}
-	#parcour-liste ul li{list-style-type: none; border-bottom: 1px solid #fff; overflow: hidden;}
-	#parcour-liste ul li a{text-decoration: none; color:#5d5d5e; overflow: hidden; font-weight: inherit;}
-	#parcour-liste ul li .parcour_list{float: left; background: url(../img/list.png) no-repeat left 9px;}
-			#parcour-liste ul li .parcour_list p{margin-left: 37px; margin-bottom: 28px;}
-		#parcour-liste ul li .score{font-size: 15px;font-family: 'Open Sans', sans-serif !important; float:right;text-transform: uppercase;right: 0;font-weight: bold; color: #95d1b8;}
-			#parcour-liste ul li .score p{margin-top: 26px;}
-				#parcour-liste ul li .score span{font-size: 30px;}
+#parcour-liste, #parcour-liste-user{background: #ecf7f8;font-family: 'Raleway', sans-serif;}
+	#parcour-liste ul,#parcour-liste-user ul{margin: 0;padding: 0;}
+	#parcour-liste ul li,#parcour-liste-user ul li{list-style-type: none; border-bottom: 1px solid #fff; overflow: hidden; padding: 12px 15px;}
+	#parcour-liste ul li a,#parcour-liste-user ul li a{text-decoration: none; color:#5d5d5e; overflow: hidden; font-weight: inherit;}
+			#parcour-liste ul li .parcour_list p,#parcour-liste-user ul li .parcour_list p{margin-bottom: 10px;}
+		#parcour-liste ul li .score,#parcour-liste-user ul li .score{font-size: 15px;font-family: 'Open Sans', sans-serif;text-transform: uppercase;right: 0;font-weight: bold; color: #95d1b8;}
+			#parcour-liste ul li .score p,#parcour-liste-user ul li .score p{margin-top: 10px;}
+				#parcour-liste ul li .score span,#parcour-liste-user ul li .score span{font-size: 30px;}
+		#parcour-liste-user ul li .blue{color: #7bd2ee;}
+		#parcour-liste-user ul li .green{color: #95d1b8;}
+		#parcour-liste-user ul li .red{color: #ed7c7b;}
 
-#profil{}
-	#profil img{width: 100%;}
+#profil{ text-align: center;background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center;font-family: 'Raleway', sans-serif; }
+	#profil img{width: 50%; border-radius: 100%; margin-top: 1em;}
+	#profil h4 span{text-transform: uppercase;}
+		#profil p{margin-top: 26px;font-family: 'Open Sans', sans-serif;}
+		#profil .score p{ text-transform: uppercase; }
+		#profil .score a{text-decoration: none; color: #7bd2ee;}
+				#profil .score span{font-size: 30px; font-weight: bold;}
+
+#parcour-fiche{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; padding-bottom:70px;}
+	#parcour-fiche #map{margin-bottom: 30px}
+	#parcour-fiche ul li span{font-weight: bold;}
+	#parcour-fiche a{box-shadow: none; border-radius: 0; border: none; background: #fff;}
 
 
+
+#parcour-fins{background: #ecf7f8 url(../img/bg_border_montain.png) repeat-x bottom center; text-align: center;font-family: 'Raleway', sans-serif;}
+	#parcour-fins h6{background: #fff; font-size: 40px; margin:30px 0 0 0;}
+
+#parcours-map {background: #ecf7f8;}
+	#parcours-map main{padding: 0;}
+		#parcours-map main a{background: #ecf7f8; box-shadow: none; border:none;}
 
 
 
